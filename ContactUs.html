@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/Styles/HomeStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--Using the Same Header & Footer as the Home Page just changing the nav-link-active and the aria-current=page to show the user on which Tab they are on in this case the user is on the the Contact Us Page-->
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Assets/Images/Logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Cresinterius
+          </a>
+          <ul class="nav justify-content-end">
+                
+            <li class="nav-item">
+                <a class="nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ContactUs.html">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+
+      <!--Finished with the Header of the Contact Us Page-->
+
+      <ul></ul>
+
+      <!--Usibg the pre-made Contact Us Form that we made in class as there was no need to change anyrthing-->
+
+      <main class="my-4"> 
+        <form action="mailto:joe@example.com"
+        method="post" 
+        enctype="text/plain"
+        class="ContactPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="card">
+                        
+                        <div class="card-header">
+                            <b>Personal Details</b>
+                        </div>
+                        <div class="card-body">
+                            <label class="form-label" for="firstName">First Name</label>
+                            <input type="text" id="firstNameInput" 
+                            name="firstName" placeholder="Joe" 
+                            class="form-control mb-3">
+                        </div>
+                        
+                        <div class="card-body">
+                            <label class="form-label" for="lastName">Last Name</label>
+                            <input type="text" id="lastNameInput" 
+                            name="lastName" placeholder="Borg" 
+                            class="form-control mb-3">
+                            
+                            <p>Age Group</p>
+                            <div class="card-body bg-secondry-subtle"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="age" id="age1">
+                                <label class="form-check-label" for="age1">
+                                    15 - 18
+                                </label>
+                            </div>
+                            
+                            <div class="card-body bg-secondry-subtle"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="age" id="age2" checked>
+                                <label class="form-check-label" for="age2">
+                                    19 - 25
+                                </label>
+                            </div>
+                            
+                            <div class="card-body bg-secondry-subtle"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="age" id="age3">
+                                <label class="form-check-label" for="age3">
+                                    26 - 40
+                                </label>
+                            </div>
+                            
+                            <div class="card-body bg-secondry-subtle"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="age" id="age4">
+                                <label class="form-check-label" for="age4">
+                                    40+
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="card">
+                        
+                        <div class="card-header">
+                            <b>Contact Information</b>
+                        </div>
+                        <div class="card-body">
+                            <label class="form-label" for="firstName">Email Address</label>
+                            <input type="text" id="emailAddressInput" 
+                            name="emailAddress" placeholder="joe@example.com" 
+                            class="form-control mb-3">
+                            
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                            <input type="text" id="phoneNumberInput" 
+                            name="phoneNumber" placeholder="1234 5678" pattern="[0-9]{4} [0-9]{4}"
+                            class="form-control mb-3">
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            
+            
+            <div class="row mt-3">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="card">
+                        
+                        <div class="card-header">
+                            <b>Mesage Details</b>
+                        </div>
+                        
+                        <div class="card-body">
+                            <label class="form-label" for="departmentInput">Department</label>
+                            <select class="form-select mb-3" aria-label="Department selection" id="departmentInput" name="department">
+                                <option selected disabled>Choose Depatment</option>
+                                <option value="tech">Products</option>
+                                <option value="cust">Services</option>
+                            </select>
+                            
+                            <label class="form-label" for="subjectInput">Subject</label>
+                            <input type="text" id="subjectInput" 
+                            name="subject" placeholder="Please Help" 
+                            class="form-control mb-3">
+                            
+                            <label class="form-label" for="messageInput">Message</label>
+                            <textarea type="text" id="messageInput" 
+                            name="message" placeholder="I need help with this..." 
+                            class="form-control mb-3"></textarea>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-2"></div>
+                <div class="col-8 px-0">
+                    <div class="container-fluid">
+                        <div class="row mx-0 px-0">
+                            <div class="col-6 mx-0 ps-0 pe-1">
+                                <button type="submit" class="btn btn-success w-100" >Send</button>
+                            </div>
+                            
+                            <div class="col-6 mx-0 ps-1 pe-0">
+                                <button type="reset" class="btn btn-danger w-100">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+          z      <div class="col-2"></div>
+                
+            </form>
+        </main>
+
+
+
+
+
+
+
+    <ul></ul>
+
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col">
+                    <a href="Contact Us.html">Contact us for more info</a>
+                </div>
+                <div class="col d-flex">
+                    <div style="width: 50px;">
+                        <img src="Assets/Images/Instagram.png" alt="" style="display: block;width: 100%;">
+                    </div>
+                    <div style="width: 50px;">
+                        <img src="Assets/Images/Instagram.png" alt="" style="display: block;width: 100%;">
+                    </div>
+                    <div style="width: 50px;">
+                        <img src="Assets/Images/Instagram.png" alt="" style="display: block;width: 100%;">
+                    </div>
+                    <div style="width: 50px;">
+                        <img src="Assets/Images/Instagram.png" alt="" style="display: block;width: 100%;">
+                    </div>
+                </div>
+
+                
+                <div class="col">
+                    <div class="text-light">
+                    <h5>Follow Us</h5></div>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!--Finished inputting the Contact Us Form-->
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/*Styles for centre of Our Clients*/
+
+.midNav{
+    margin: 30px 0;
+}
+
+.midNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.midNav ul li a{
+    color: #000000;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.midNav ul li a:hover{
+    opacity: 1;
+}
+
+@media (max-width:700px){
+    .midNav ul{
+        flex-direction: column;
+    }
+    .midNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;        
+    }
+}
+
+/* Styles for the Footer*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #000000;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: #000000;
+    opacity: 0.9;
+}
+
+
+/* Hover Effect on the Social Icons on the Footer */
+
+.socialIcons a:hover{
+    background-color: #000000;
+    transition: 0.5;
+}
+
+.socialIcons a:hover i{
+    color: #ff0000;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: #FFFFFF;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: #FFFFFF;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
