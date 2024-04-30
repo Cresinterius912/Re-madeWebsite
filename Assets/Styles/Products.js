@@ -1,12 +1,16 @@
-function myFunction(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // Get the image text
-    var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
-  }
+var table = document.getElementById("priceTable");
+
+var i = 1;
+var sum = 0;
+while (i < table.rows.length) {
+    sum += parseFloat(table.rows[i].cells[2].innerHTML)
+    i++;
+}
+
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+
+cell2.innerHTML = "Total Price";
+cell3.innerHTML = sum;
